@@ -1,0 +1,4 @@
+name: "Patching KernelSu-Susfs"
+        run: |
+          patch -p1 < ./KernelSu/10_enable_susfs_for_ksu.patch
+          patch -p1 < 50_add_susfs_in_kernel.patch
